@@ -1,4 +1,4 @@
-# Word
+# Word Tego Typu
 
 ## Description
 
