@@ -1,0 +1,316 @@
+body {
+  background-color: #4b4b4b;
+  margin: 0px !important;
+  width: 98.9%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  color: #ffffff;
+  font-size: 32px;
+  margin: 10px;
+  text-align: center;
+}
+
+nav {
+  width: 100%;
+  margin: 0px;
+  background-color: #ce3a3a;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+}
+
+nav > a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+nav > a:hover {
+  color: #972a2a;
+}
+
+section {
+  margin: 10px;
+  padding: 10px;
+  color: #ffffff;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #666666;
+}
+h1 {
+  text-align: center;
+}
+.error {
+  color: red;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.correct {
+  color: green;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#status {
+  margin: 10px auto;
+  color: #ffffff;
+  border-collapse: collapse;
+  width: 80%;
+}
+
+#status th,
+#status td {
+  border: 1px solid #000000;
+  text-align: center;
+  padding: 10px;
+}
+
+#status tr:hover {
+  background-color: #4b4b4b;
+}
+
+.trHeader:hover {
+  background-color: #3b3b3b;
+}
+
+#status tr:nth-child(even) {
+  background-color: #4b4b4b;
+}
+
+.navol {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  font-size: 18px;
+  height: 35px;
+  line-height: 200%;
+  display: inline-block;
+}
+
+.navol a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+}
+
+.navol > li {
+  float: left;
+  width: 150px;
+  height: 40px;
+  border-right: 1px dashed #751b1b;
+}
+
+.navol > li:first-child {
+  border-left: 1px dashed #751b1b;
+}
+
+.navol > li:hover {
+  background-color: #c34e4e;
+}
+
+.navol > li:hover > a {
+  color: #751b1b;
+}
+
+.navol > li > ul {
+  list-style-type: none;
+  padding: 0;
+  height: 40;
+  margin: 0;
+  display: none;
+}
+
+.navol > li:hover > ul {
+  display: block;
+}
+
+.navol > li > ul > li {
+  background-color: #c33838;
+  position: relative;
+  z-index: 100;
+  border-top: 1px dashed #751b1b;
+}
+
+.navol > li > ul > li:hover {
+  background-color: #c34e4e;
+}
+
+.navol > li > ul > li:hover a {
+  color: #751b1b;
+}
+
+.nonForm {
+  margin-top: 20px;
+  background-color: #3b3b3b;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+form {
+  margin-top: 20px;
+  background-color: #3b3b3b;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+form table {
+  width: 100%;
+}
+
+form table caption {
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+form table td {
+  padding: 10px;
+  text-align: left;
+}
+
+form table td:first-child {
+  width: 30%;
+}
+
+form input[type="number"],
+form select,
+form input[type="datetime-local"],
+form input[type="email"],
+form input[type="submit"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  background-color: #4b4b4b;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  background-color: #4b4b4b;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+}
+
+form input[type="submit"] {
+  background-color: #ce3a3a;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: #972a2a;
+}
+form > h2 {
+  text-align: center;
+}
+select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  background-color: #ce3a3a;
+  color: #ffffff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #972a2a;
+}
+
+#dane {
+  background-color: #3b3b3b;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  color: #ffffff;
+}
+
+.loginForm {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #3b3b3b;
+  border-radius: 10%;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+}
+
+#pRejestracja {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.witaj {
+  text-align: center;
+}
+
+#dane {
+  border-collapse: collapse;
+  background-color: #3b3b3b;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  color: #ffffff;
+  /* display: flex;
+  align-items: l;
+  justify-content: center; */
+  flex-direction: column;
+}
+#dane caption {
+  font-size: 17px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+#dane td {
+  border: 1px solid #000;
+  text-align: left;
+  padding: 8px;
+  text-align: center;
+}
+
+.bladSerwera {
+  text-align: center;
+  color: #f00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}

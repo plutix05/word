@@ -1,0 +1,26 @@
+### PROTECT FILES
+
+<FilesMatch "\.(htaccess|htpasswd|ini|fla|psd|log|sh)$">
+Order Allow,Deny
+Deny from all
+</FilesMatch>
+
+RewriteEngine on
+#widoczne dla usera zewnętrznego, index.php przenosi do user.php
+RewriteRule rejestracja-zakonczona-pomyslnie witamy.php
+RewriteRule status-egzaminu status_user.php
+RewriteRule udany-zapis-na-egzamin-teoretyczny user_zapis.php
+RewriteRule zaloguj-sie logowanie.php
+RewriteRule zapisz-sie-na-egzamin-teoretyczny user.php
+RewriteRule zarejestruj-sie rejestracja.php
+RewriteRule regulamin-serwisu regulamin.html
+#widoczne dla zalogowanych userów
+RewriteRule panel-administracyjny admin.php
+RewriteRule lista-uzytkownikow users.php
+RewriteRule zatwierdzanie-konta zatwierdz.php
+RewriteRule usuwanie-konta usun.php
+RewriteRule zmiana-hasla haslo_admin.php
+RewriteRule haslo-zmienione haslo_zm.php
+RewriteRule lista-egzaminow lista_egzaminow.php
+RewriteRule wpisz-wynik wynik.php
+RewriteRule wynik-zostal-zmieniony wynik_zmiana.php
